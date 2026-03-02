@@ -1,0 +1,33 @@
+# Ignore local environment and OS files
+__pycache__/
+*.pyc
+.venv/
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Ignore project-specific build/log artifacts
+.ruff_cache/
+*.log
+
+# 💎 PREMIUM ASSETS (Do not share publicly)
+# Workflows and tuned configuration files for Patreon/BMAC
+workflows/
+*.json
+!node_config.json
+!model-list.json
+!package.json
+
+# Specialized tools and research docs
+generate_workflow.py
+docs/enhanced_workflow_guide.md
+docs/workflow_guide.md
+markdown/WORKFLOW_CHANGES.md
+markdown/workflow_changes.patch
+
+# Backup and temp files
+*.backup.json
+*.tmp
+temp/
