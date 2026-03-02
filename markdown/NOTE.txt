@@ -1,2 +1,0 @@
-# Note: The patch was not applied automatically because the `apply_patch` utility is not available in this sandbox.
-# The patch contents are provided above for reference. If you need to apply the changes, use a standard patch command or edit the file manually.
