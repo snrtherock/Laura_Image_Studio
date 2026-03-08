@@ -28,9 +28,10 @@
 
 ### Remaining / Not Yet Done
 
-- **Workflow node placement**: The new nodes (LauraModelLinks, LauraModelManager, LauraAutoConfig) are NOT yet added to any workflow JSON files. They need to be manually placed in ComfyUI's editor or programmatically injected into master workflows.
-- **9 registry entries have TBD/placeholder files**: z_image_edit, qwen_image_2512, glm_image, firered_edit_1_1, helios_distilled, helios_base, ltx_2_3, cogvideox_5b, seedvr2 — download URLs to be added when confirmed.
-- **Git commit**: Changes have NOT been committed yet.
+1. **Workflow node placement** — The 7 new nodes (LauraModelLinks, LauraModelManager, LauraAutoConfig, etc.) are NOT yet added to any workflow JSON files. Need to programmatically inject them into master workflows (enhanced_master_workflow.json, master_all_in_one.json, etc.) with correct ComfyUI node format (positions, IDs, widget defaults, connections).
+2. **9 registry entries have TBD/placeholder files** — z_image_edit, qwen_image_2512, glm_image, firered_edit_1_1, helios_distilled, helios_base, ltx_2_3, cogvideox_5b, seedvr2 — download URLs/filenames to be added when HuggingFace repos are confirmed.
+3. **Live ComfyUI test** — All verification was done with mocked `folder_paths` outside ComfyUI. Need to load in actual ComfyUI to confirm all 128 nodes register and the web extension renders correctly.
+4. **Git committed** ✅ — Submodule: `0e4bf20`, Parent: `4eae4bb` (2026-03-09)
 
 ### Key Bug Fixes Applied During Implementation
 
