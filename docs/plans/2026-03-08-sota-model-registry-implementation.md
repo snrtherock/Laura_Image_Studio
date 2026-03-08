@@ -28,10 +28,10 @@
 
 ### Remaining / Not Yet Done
 
-1. **Workflow node placement** — The 7 new nodes (LauraModelLinks, LauraModelManager, LauraAutoConfig, etc.) are NOT yet added to any workflow JSON files. Need to programmatically inject them into master workflows (enhanced_master_workflow.json, master_all_in_one.json, etc.) with correct ComfyUI node format (positions, IDs, widget defaults, connections).
-2. **9 registry entries have TBD/placeholder files** — z_image_edit, qwen_image_2512, glm_image, firered_edit_1_1, helios_distilled, helios_base, ltx_2_3, cogvideox_5b, seedvr2 — download URLs/filenames to be added when HuggingFace repos are confirmed.
-3. **Live ComfyUI test** — All verification was done with mocked `folder_paths` outside ComfyUI. Need to load in actual ComfyUI to confirm all 128 nodes register and the web extension renders correctly.
-4. **Git committed** ✅ — Submodule: `0e4bf20`, Parent: `4eae4bb` (2026-03-09)
+1. ~~**Workflow node placement**~~ ✅ COMPLETED (2026-03-09) — 7 new nodes (IDs 1000-1006) injected into 3 master workflows: enhanced_master_workflow.json (41→48 nodes), master_all_in_one.json (125→132 nodes), Laura_Master_Studio_v0.8.json (161→168 nodes). Positioned in vertical column at x=2000.
+2. ~~**9 TBD registry entries**~~ ✅ COMPLETED (2026-03-09) — 8 of 9 filled with real HuggingFace data (qwen_image_2512, glm_image, firered_edit_1_1, helios_distilled, helios_base, ltx_2_3, cogvideox_5b, seedvr2). z_image_edit left as pending_release (weights not yet public).
+3. **Live ComfyUI test** — All verification was done with mocked `folder_paths` outside ComfyUI. Need to load in actual ComfyUI to confirm all 128 nodes register and the web extension renders correctly. (Manual step for user)
+4. **Git committed** ✅ — Latest commit pending (2026-03-09)
 
 ### Key Bug Fixes Applied During Implementation
 
